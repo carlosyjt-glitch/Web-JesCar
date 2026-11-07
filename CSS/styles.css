@@ -176,7 +176,7 @@ body {
     font-weight: bold;
     color: #ef4444;
 }
-
+                                                     
 a[href^="https://"] {
     color: #2563eb;
 }
@@ -198,4 +198,44 @@ a[href$=".pdf"] {
 
 .specs-list li:last-child {
     font-style: italic;
+}
+
+/* ==========================================
+   ESTILOS PARA TABLAS (sobre-mi.html)
+   ========================================== */
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-table th, 
+.about-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.about-table th {
+    background-color: #1e293b;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Filas alternas (Efecto cebra - Requisito de taller) */
+.about-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.about-table tr:hover {
+    background-color: #f1f5f9;
 }

@@ -11,44 +11,70 @@
 
     <!-- CABECERA Y BANNER PRINCIPAL -->
     <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
-        <!-- Banner principal a todo el ancho -->
         <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
         
         <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
         
-        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Sobre Mí</h1>
-        <p style="font-size: 1.1em; color: #475569;">Conoce más sobre el creador de <strong>AutoRepuestos JesCar</strong>.</p>
+        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Sobre Mí y la Empresa</h1>
+        <p style="font-size: 1.1em; color: #475569;">Conoce la trayectoria y detalles de <strong>AutoRepuestos JesCar</strong>.</p>
         
-        <!-- Logotipo con la ruta correcta dentro de assets -->
         <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;">
         
         <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
     </header>
     
-    <!-- MENÚ DE NAVEGACIÓN (Con la clase actual adaptada) -->
+    <!-- MENÚ DE NAVEGACIÓN -->
     <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
-    <ul style="list-style: none; margin: 0; padding: 0;">
-        <li style="display: inline; margin: 0 10px;">
-            <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
-        </li>
-    </ul>
-</nav>
+        <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin: 0 10px;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <!-- Página actual marcada -->
+                <a href="sobre-mi.html" class="main-nav__link--current" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
+            </li>
+        </ul>
+    </nav>
     
-    <!-- CONTENIDO PRINCIPAL -->
-    <main style="padding: 20px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
-        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <h2 style="color: #1e293b; margin-bottom: 15px;">Mi Experiencia</h2>
-            <p style="color: #475569; line-height: 1.6; margin-bottom: 15px;">Hola, mi nombre es <strong>Carlos Yovanny Jaimes</strong>. Tengo amplia experiencia en el sector automotriz y gestión de proyectos.</p>
-            <p style="color: #475569; line-height: 1.6;">Este proyecto nace de mi pasión por los vehículos y la tecnología. Busco ofrecer a mis clientes los mejores repuestos de la ciudad, garantizando siempre una asesoría <u>transparente</u> y <em>confiable</em>.</p>
+    <!-- CONTENIDO PRINCIPAL CON LA TABLA -->
+    <main style="padding: 30px 20px; max-width: 900px; margin: 0 auto; font-family: Arial, sans-serif;">
+        <section style="margin-bottom: 30px;">
+            <h2 style="color: #1e293b; margin-bottom: 10px;">Información General y Corporativa</h2>
+            <p style="color: #475569; line-height: 1.6; margin-bottom: 20px;">
+                Este espacio detalla nuestros datos clave, la disponibilidad de atención y los orígenes de nuestra organización en el sector de autopartes multimarca.
+            </p>
+
+            <!-- TABLA ESTILIZADA CON CSS -->
+            <table class="about-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Categoría</th>
+                        <th style="width: 75%;">Detalle / Información</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Datos Personales</strong></td>
+                        <td>Carlos Yovanny Jaimes — Coordinador de proyectos y especialista en soluciones de repuestos y baterías automotrices.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Horario de Atención</strong></td>
+                        <td>Lunes a Viernes: 8:00 a.m. – 6:00 p.m. <br> Sábados: 8:00 a.m. – 2:00 p.m. (Jornada continua).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Biografía de la Empresa</strong></td>
+                        <td>
+                            <strong>AutoRepuestos JesCar</strong> nace como una distribuidora líder en el mercado de autopartes, especializada en proveer repuestos y baterías de alta gama para <strong>todas las marcas</strong> del parque automotor. Nos distinguimos por ofrecer asesoría técnica especializada, entregas oportunas y un inventario multimarca garantizado para vehículos livianos y pesados.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     
@@ -56,5 +82,6 @@
     <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
         <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>
     </footer>
+
 </body>
 </html>
