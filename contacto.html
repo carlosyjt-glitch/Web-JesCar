@@ -1,59 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | AutoRepuestos JesCar</title>
-  </head>
-  <body>
-    <header>
-      <h1>Contacto</h1>
-      <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="sobre-mi.html">Sobre mí</a> |
-        <a href="proyectos.html">Proyectos</a> |
-        <a href="servicios.html">Servicios</a> |
-        <a href="contacto.html">Contacto</a>
-      </nav>
+    <!-- Enlace a la hoja de estilos compartida -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- CABECERA Y BANNER PRINCIPAL -->
+    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
+        <!-- Banner principal a todo el ancho -->
+        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
+        
+        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
+        
+        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Contacto</h1>
+        <p style="font-size: 1.1em; color: #475569;">Comunícate con <strong>AutoRepuestos JesCar</strong>.</p>
+        
+        <!-- Logotipo con la ruta correcta dentro de assets -->
+        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;">
+        
+        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
     </header>
 
-    <main>
-      <p>Completá el formulario para contarme qué sitio necesitás. Usá datos de prueba: este formulario no se envía a ningún servidor.</p>
+    <!-- MENÚ DE NAVEGACIÓN (Con la clase actual adaptada) -->
+    <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
+    <ul style="list-style: none; margin: 0; padding: 0;">
+        <li style="display: inline; margin: 0 10px;">
+            <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
+        </li>
+    </ul>
+</nav>
 
-      <!-- method="get" y sin action: al enviar, la página se recarga y los datos aparecen en la dirección -->
-      <form method="get">
-        <p>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre">
-        </p>
-        <p>
-          <label for="correo">Correo</label>
-          <input type="email" id="correo" name="correo">
-        </p>
-        <p>
-          <label for="paginas">Cantidad de páginas</label>
-          <input type="number" id="paginas" name="paginas" value="3">
-        </p>
-        <p>Tipo de sitio:</p>
-        <p>
-          <input type="radio" id="tipo-personal" name="tipo" value="personal">
-          <label for="tipo-personal">Personal</label>
-          <input type="radio" id="tipo-negocio" name="tipo" value="negocio">
-          <label for="tipo-negocio">Negocio</label>
-          <input type="radio" id="tipo-blog" name="tipo" value="blog">
-          <label for="tipo-blog">Blog</label>
-        </p>
-        <p>
-          <input type="checkbox" id="novedades" name="novedades" value="si">
-          <label for="novedades">Quiero recibir novedades</label>
-        </p>
-        <p>
-          <input type="submit" value="Enviar">
-        </p>
-      </form>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main style="padding: 30px 20px; max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
+        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="color: #1e293b; margin-bottom: 15px;">Envíanos un mensaje</h2>
+            <p style="color: #475569; line-height: 1.5; margin-bottom: 20px;">Completá el formulario para contarme qué sitio necesitás. Usá datos de prueba: este formulario no se envía a ningún servidor.</p>
+
+            <!-- method="get" y sin action: al enviar, la página se recarga y los datos aparecen en la dirección -->
+            <form method="get">
+                <p style="margin-bottom: 15px;">
+                    <label for="nombre" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <label for="correo" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Correo</label>
+                    <input type="email" id="correo" name="correo" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <label for="paginas" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Cantidad de páginas</label>
+                    <input type="number" id="paginas" name="paginas" value="3" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                </p>
+                <p style="font-weight: bold; color: #1e293b; margin-bottom: 5px;">Tipo de sitio:</p>
+                <p style="margin-bottom: 15px;">
+                    <input type="radio" id="tipo-personal" name="tipo" value="personal">
+                    <label for="tipo-personal" style="margin-right: 15px; color: #475569;">Personal</label>
+                    <input type="radio" id="tipo-negocio" name="tipo" value="negocio">
+                    <label for="tipo-negocio" style="margin-right: 15px; color: #475569;">Negocio</label>
+                    <input type="radio" id="tipo-blog" name="tipo" value="blog">
+                    <label for="tipo-blog" style="color: #475569;">Blog</label>
+                </p>
+                <p style="margin-bottom: 20px;">
+                    <input type="checkbox" id="novedades" name="novedades" value="si">
+                    <label for="novedades" style="color: #475569;">Quiero recibir novedades</label>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar" style="background-color: #2563eb; color: #ffffff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+                </p>
+            </form>
+        </section>
     </main>
 
-    <footer>
-      <p><small>© 2026 AutoRepuestos JesCar. Sitio de ejemplo del curso.</small></p>
+    <!-- PIE DE PÁGINA -->
+    <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
+        <p><small>&copy; 2026 AutoRepuestos JesCar. Sitio de ejemplo del curso.</small></p>
     </footer>
-  </body>
+
+</body>
 </html>

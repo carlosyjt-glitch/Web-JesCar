@@ -1,0 +1,201 @@
+.card-product {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-product__title {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.card-product__text {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Enlaces externos (https) */
+a[href^="https://"] {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Enlaces a archivos específicos (.pdf) */
+a[href$=".pdf"] {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Combinador descendiente para los ítems del menú principal */
+.main-nav a {
+    color: #334155;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+/* Modificador para el enlace de la página actual */
+.main-nav a.main-nav__link--current {
+    color: #ef4444;
+    font-weight: bold;
+    border-bottom: 2px solid #ef4444;
+}
+
+/* 1. Link & Visited */
+.card-product__link:link {
+    color: #2563eb;
+}
+
+.card-product__link:visited {
+    color: #4f46e5;
+}
+
+/* 2. Hover & Focus (Nunca quitar el outline de accesibilidad) */
+.card-product__link:hover {
+    text-decoration: underline;
+}
+
+.card-product__link:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* 3. Active (Botón presionado) */
+.card-product__btn:active {
+    transform: scale(0.97);
+    background-color: #b91c1c;
+}
+
+/* Filas alternas para tablas (efecto cebra) */
+.specs-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Estilo para el primer y último elemento de una lista de especificaciones */
+.specs-list li:first-child {
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.specs-list li:last-child {
+    border-bottom: none;
+    color: #64748b;
+}
+
+/* Selector lógico :is() para unificar estados interactivos */
+:is(.card-product__link, .card-product__btn):hover {
+    cursor: pointer;
+}
+
+/* ==========================================
+   1. RESET Y ESTILOS BASE
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    color: #334155;
+    background-color: #f1f5f9;
+}
+
+/* ==========================================
+   2. COMPONENTE: TARJETA DE PRODUCTO (BEM)
+   ========================================== */
+.card-product {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 350px;
+}
+
+.card-product--featured {
+    border-color: #3b82f6;
+}
+
+.card-product__title {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.card-product__text {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.card-product__link {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.card-product__link:hover {
+    text-decoration: underline;
+}
+
+.card-product__link:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.card-product__btn--sale {
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card-product__btn--sale:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================
+   3. NAVEGACIÓN Y ENLACES POR ATRIBUTO
+   ========================================== */
+.main-nav a {
+    color: #334155;
+    text-decoration: none;
+}
+
+.main-nav a.main-nav__link--current {
+    font-weight: bold;
+    color: #ef4444;
+}
+
+a[href^="https://"] {
+    color: #2563eb;
+}
+
+a[href$=".pdf"] {
+    font-weight: 600;
+}
+
+/* ==========================================
+   4. TABLAS Y LISTAS
+   ========================================== */
+.specs-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.specs-list li:first-child {
+    font-weight: bold;
+}
+
+.specs-list li:last-child {
+    font-style: italic;
+}

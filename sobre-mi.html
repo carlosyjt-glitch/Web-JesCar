@@ -2,32 +2,59 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre Mí - AutoRepuestos JesCar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - AutoRepuestos JESCAR</title>
+    <!-- Enlace a la hoja de estilos compartida -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Sobre Mí</h1>
-        <img src="Logo-jescar.jpg" alt="logo JESCar" width="300">
+
+    <!-- CABECERA Y BANNER PRINCIPAL -->
+    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
+        <!-- Banner principal a todo el ancho -->
+        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
+        
+        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
+        
+        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Sobre Mí</h1>
+        <p style="font-size: 1.1em; color: #475569;">Conoce más sobre el creador de <strong>AutoRepuestos JesCar</strong>.</p>
+        
+        <!-- Logotipo con la ruta correcta dentro de assets -->
+        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;">
+        
+        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="baterias.html">Catálogo de Baterías</a></li>
-            <li><a href="sobre-mi.html">Sobre Mí</a></li>
-        </ul>
-    </nav>
+    <!-- MENÚ DE NAVEGACIÓN (Con la clase actual adaptada) -->
+    <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
+    <ul style="list-style: none; margin: 0; padding: 0;">
+        <li style="display: inline; margin: 0 10px;">
+            <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
+        </li>
+        <li style="display: inline; margin: 0 10px;">
+            <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
+        </li>
+    </ul>
+</nav>
     
-    <main>
-        <section>
-            <h2>Mi Experiencia</h2>
-            <p>Hola, mi nombre es Carlos Yovanny Jaimes. Tengo amplia experiencia en el sector automotriz y gestión de proyectos.</p>
-            <p>Este proyecto nace de mi pasión por los vehículos y la tecnología. Busco ofrecer a mis clientes los mejores repuestos de la ciudad, garantizando siempre una asesoría <u>transparente</u> y <em>confiable</em>.</p>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main style="padding: 20px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="color: #1e293b; margin-bottom: 15px;">Mi Experiencia</h2>
+            <p style="color: #475569; line-height: 1.6; margin-bottom: 15px;">Hola, mi nombre es <strong>Carlos Yovanny Jaimes</strong>. Tengo amplia experiencia en el sector automotriz y gestión de proyectos.</p>
+            <p style="color: #475569; line-height: 1.6;">Este proyecto nace de mi pasión por los vehículos y la tecnología. Busco ofrecer a mis clientes los mejores repuestos de la ciudad, garantizando siempre una asesoría <u>transparente</u> y <em>confiable</em>.</p>
         </section>
     </main>
     
-    <footer>
-        <p>Derechos reservados &copy; 2026 - AutoRepuestos</p>
+    <!-- PIE DE PÁGINA -->
+    <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
+        <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>
     </footer>
 </body>
 </html>

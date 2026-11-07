@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo de Baterías - AutoRepuestos JesCar</title>
+    <!-- Enlace a la hoja de estilos compartida -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- CABECERA Y BANNER PRINCIPAL -->
+    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
+        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
+        
+        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
+        
+        <div style="text-align: center; font-family: Arial, sans-serif;">
+            <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Catálogo y Precios de Baterías</h1>
+            <p style="font-size: 1.1em; color: #475569;">Energía garantizada para livianos, pesados y maquinaria.</p>
+        </div>
+        
+        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="450" style="display: block; margin: 20px auto;">  
+    </header>
+    
+    <!-- MENÚ DE NAVEGACIÓN ACTUALIZADO -->
+    <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
+        <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin: 0 10px;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <!-- Página actual marcada con el modificador BEM -->
+                <a href="catalogo-baterias.html" class="main-nav__link--current" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- CONTENIDO PRINCIPAL: TARJETAS DE BATERÍAS -->
+    <main style="padding: 30px 20px; max-width: 1000px; margin: 0 auto; font-family: Arial, sans-serif;">
+        <h2 style="color: #1e293b; text-align: center; margin-bottom: 25px;">Nuestros Modelos Destacados</h2>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+            <!-- Tarjeta 1: Batería AC Delco -->
+            <article class="card-product card-product--featured">
+                <img src="assets/img/bateria-acdelco.jpg" alt="Batería AC Delco 12V" class="card-product__img" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                <h3 class="card-product__title">Batería AC Delco 12V - Ref. 42</h3>
+                <p class="card-product__text">Libre de mantenimiento, alto poder de arranque en frío (CCA).</p>
+                <p style="font-size: 1.25rem; font-weight: bold; color: #16a34a; margin-bottom: 15px;">$ 520.000 COP</p>
+                 <a href="https://autorespuestosjescar.com/detalles-acdelco" class="card-product__link">Ver especificaciones</a>
+                <a href="assets/img/catalogo.pdf" class="card-product__btn card-product__btn--sale" style="margin-top: 10px; display: inline-block;">Ficha Técnica (.PDF)</a>
+            </article>
+
+            <!-- Tarjeta 2: Batería Willard -->
+            <article class="card-product">
+                <img src="assets/img/bateria-willard.jpg" alt="Batería Willard de 12V" class="card-product__img" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+                <h3 class="card-product__title">Batería Willard Titanio 12V</h3>
+                 <p class="card-product__text">Tecnología de aleación de plata y titanio de máxima durabilidad.</p>
+                 <p style="font-size: 1.25rem; font-weight: bold; color: #16a34a; margin-bottom: 15px;">$ 585.000 COP</p>
+                <a href="https://www.bateriaswillard.com" target="_blank" class="card-product__link">Sitio oficial</a>
+            </article>
+s
+            <!-- Tarjeta 3: Batería Bosch -->
+            <article class="card-product">
+                <img src="assets/img/bateria-bosch.jpg" alt="Batería Bosch S4 12V" class="card-product__img" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+               <h3 class="card-product__title">Batería Bosch S4 12V</h3>
+                <p class="card-product__text">Diseño alemán de alta fiabilidad para vehículos modernos.</p>
+                 <p style="font-size: 1.25rem; font-weight: bold; color: #16a34a; margin-bottom: 15px;">$ 550.000 COP</p>
+                 <a href="https://autorespuestosjescar.com/bosch" class="card-product__link">Ver especificaciones</a>
+            </article>
+
+            <!-- Tarjeta 4: Batería Mac -->
+            <article class="card-product">
+                <img src="assets/img/bateria-mac.jpg" alt="Batería Mac 12V" class="card-product__img" style="width: 100%; height: 200px; object-fit: cover; border-radius: 6px; margin-bottom: 12px;">
+               <h3 class="card-product__title">Batería Mac 12V</h3>
+                <p class="card-product__text">Diseño innovador con tecnología de última generación para un rendimiento óptimo.</p>
+                 <p style="font-size: 1.25rem; font-weight: bold; color: #16a34a; margin-bottom: 15px;">$ 600.000 COP</p>
+                 <a href="https://autorespuestosjescar.com/bosch" class="card-product__link">Ver especificaciones</a>
+            </article>
+
+        </div>
+    </main>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
+        <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>
+    </footer>
+
+</body>
+</html>
