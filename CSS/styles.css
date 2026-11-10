@@ -161,3 +161,69 @@ footer {
     border-radius: 6px;
     margin-bottom: 12px;
 }
+
+/* ==========================================
+   DISEÑO ADAPTATIVO (RESPONSIVE DESIGN)
+   ========================================== */
+
+/* 1. Ajustes generales para imágenes y contenedores */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* El contenedor principal de 960px ahora se vuelve flexible en pantallas pequeñas */
+.contenedor-principal, 
+header, 
+nav, 
+main, 
+footer {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 2. Adaptabilidad para las tarjetas de productos (Catálogo) */
+/* Hacemos que la sección del catálogo use Flexbox para que se acomoden solas */
+main div[style*="display: flex"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 3. Media Query para Tablets y Celulares (Pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* El menú de navegación se apila verticalmente para que los botones queden cómodos */
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu li {
+        display: block;
+        margin: 0;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+    }
+
+    /* Las tarjetas de productos ocupan todo el ancho disponible en celulares */
+    .card-product {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Tablas responsivas: se desplazan horizontalmente si no caben */
+    table.about-table, 
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
