@@ -87,12 +87,53 @@ footer {
     border-radius: 6px;
 }
 
-/* Tablas estructuradas (Página de estudiantes / sobre mí) */
-.tabla {
+/* ==========================================
+   ESTILOS MODERNOS PARA LA TABLA (sobre-mi.html)
+   ========================================== */
+.about-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+}
+
+.about-table th, 
+.about-table td {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #334155;
+    vertical-align: top;
+}
+
+.about-table th {
+    background-color: #0f172a; /* Tono oscuro elegante */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #1e293b;
+}
+
+/* Filas alternas para mejor lectura (Efecto cebra) */
+.about-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Separación sutil entre filas */
+.about-table tr:not(:last-child) td {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Efecto al pasar el cursor sobre la fila */
+.about-table tr:hover {
+    background-color: #f1f5f9;
+    transition: background-color 0.2s ease;
 }
 
 .tabla th, .tabla td {

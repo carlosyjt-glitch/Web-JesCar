@@ -10,79 +10,118 @@
 <body>
 
     <!-- CABECERA Y BANNER PRINCIPAL -->
-    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
-        <!-- Banner principal a todo el ancho -->
+    <header class="cabecera" style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
         <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
         
         <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
         
-        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Contacto</h1>
+        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Contacto y Solicitudes</h1>
         <p style="font-size: 1.1em; color: #475569;">Comunícate con <strong>AutoRepuestos JesCar</strong>.</p>
         
-        <!-- Logotipo con la ruta correcta dentro de assets -->
-        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;">
+        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;" class="cabecera__logo">
         
         <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN (Con la clase actual adaptada) -->
-    <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
-    <ul style="list-style: none; margin: 0; padding: 0;">
-        <li style="display: inline; margin: 0 10px;">
-            <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
-        </li>
-    </ul>
-</nav>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
+        <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin: 0 10px;">
+                <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
+            </li>
+            <li style="display: inline; margin: 0 10px;">
+                <!-- Página actual marcada con la clase correspondiente -->
+                <a href="contacto.html" class="menu__link--current" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #2563eb;">Contacto</a>
+            </li>
+        </ul>
+    </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main style="padding: 30px 20px; max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
-        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <h2 style="color: #1e293b; margin-bottom: 15px;">Envíanos un mensaje</h2>
-            <p style="color: #475569; line-height: 1.5; margin-bottom: 20px;">Completá el formulario para contarme qué sitio necesitás. Usá datos de prueba: este formulario no se envía a ningún servidor.</p>
+    <!-- CONTENIDO PRINCIPAL APILADO (960px) -->
+    <main style="padding: 30px 20px; max-width: 960px; margin: 0 auto; font-family: Arial, sans-serif;">
+        
+        <!-- SECCIÓN DEL FORMULARIO -->
+        <section class="bienvenida" style="background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 30px;">
+            <h2 style="color: #1e293b; margin-bottom: 10px;">Envíanos un mensaje</h2>
+            <p style="color: #475569; line-height: 1.5; margin-bottom: 20px;">Completa el formulario para contarme qué sitio o cotización necesitás. (Datos de prueba para el taller).</p>
 
-            <!-- method="get" y sin action: al enviar, la página se recarga y los datos aparecen en la dirección -->
             <form method="get">
                 <p style="margin-bottom: 15px;">
                     <label for="nombre" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                    <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
                 </p>
                 <p style="margin-bottom: 15px;">
                     <label for="correo" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Correo</label>
-                    <input type="email" id="correo" name="correo" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                    <input type="email" id="correo" name="correo" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
                 </p>
                 <p style="margin-bottom: 15px;">
-                    <label for="paginas" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Cantidad de páginas</label>
-                    <input type="number" id="paginas" name="paginas" value="3" style="width: 100%; padding: 8px; border: 1px solid #cbd5e1; border-radius: 4px;">
+                    <label for="paginas" style="display: block; font-weight: bold; color: #1e293b; margin-bottom: 5px;">Cantidad de páginas / Baterías</label>
+                    <input type="number" id="paginas" name="paginas" value="3" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box;">
                 </p>
-                <p style="font-weight: bold; color: #1e293b; margin-bottom: 5px;">Tipo de sitio:</p>
+                <p style="font-weight: bold; color: #1e293b; margin-bottom: 5px;">Tipo de sitio o servicio:</p>
                 <p style="margin-bottom: 15px;">
                     <input type="radio" id="tipo-personal" name="tipo" value="personal">
                     <label for="tipo-personal" style="margin-right: 15px; color: #475569;">Personal</label>
                     <input type="radio" id="tipo-negocio" name="tipo" value="negocio">
                     <label for="tipo-negocio" style="margin-right: 15px; color: #475569;">Negocio</label>
                     <input type="radio" id="tipo-blog" name="tipo" value="blog">
-                    <label for="tipo-blog" style="color: #475569;">Blog</label>
+                    <label for="tipo-blog" style="color: #475569;">Blog / Baterías</label>
                 </p>
                 <p style="margin-bottom: 20px;">
                     <input type="checkbox" id="novedades" name="novedades" value="si">
-                    <label for="novedades" style="color: #475569;">Quiero recibir novedades</label>
+                    <label for="novedades" style="color: #475569;">Quiero recibir novedades y ofertas</label>
                 </p>
                 <p>
-                    <input type="submit" value="Enviar" style="background-color: #2563eb; color: #ffffff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">
+                    <input type="submit" value="Enviar Datos" style="background-color: #2563eb; color: #ffffff; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">
                 </p>
             </form>
         </section>
-    </main>
 
+        <!-- SECCIÓN DE LA TABLA DE REGISTRO DE SOLICITUDES -->
+        <section class="bienvenida" style="background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0;">
+            <h2 style="color: #1e293b; margin-bottom: 10px;">📋 Registro de Personas Interesadas</h2>
+            <p style="color: #475569; line-height: 1.5; margin-bottom: 15px;">Listado de clientes y usuarios que han dejado sus datos básicos para recibir llamadas o asesoría:</p>
+
+            <!-- Tabla con la misma clase estilizada .about-table -->
+            <table class="about-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo (Contacto)</th>
+                        <th>Tipo de Solicitud</th>
+                        <th>Fecha de Registro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andrés Felipe Gómez</td>
+                        <td>andres.gomez@test.com</td>
+                        <td>Negocio (Cotización Batería Pesada)</td>
+                        <td>08 / Nov / 2026</td>
+                    </tr>
+                    <tr>
+                        <td>María Fernanda Rojas</td>
+                        <td>mrojas@academia.test</td>
+                        <td>Sitio Web Personal</td>
+                        <td>09 / Nov / 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Camilo Andrés Pérez</td>
+                        <td>camilo.perez@empresa.co</td>
+                        <td>Negocio (Flota Automotriz)</td>
+                        <td>09 / Nov / 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    
     <!-- PIE DE PÁGINA -->
     <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
         <p><small>&copy; 2026 AutoRepuestos JesCar. Sitio de ejemplo del curso.</small></p>
