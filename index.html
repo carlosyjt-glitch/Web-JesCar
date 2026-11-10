@@ -3,85 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoRepuestos JESCAR</title>
-    <!-- Ruta correcta hacia la hoja de estilos -->
+    <title>Inicio - AutoRepuestos JesCar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- CABECERA Y BANNER -->
-    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
-        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
-        
-        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
-        
-        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Bienvenido a AutoRepuestos JesCar</h1>
-        <p style="font-size: 1.1em; color: #475569;">Especialistas en <strong>baterías</strong> y repuestos para tu vehículo.</p>
-        
-        <!-- Logotipo con la ruta correcta dentro de assets -->
-        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="450" style="display: block; margin: 20px auto;">
-        
-        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal" width="100%" style="display: block;">
+        <h1 style="color: #1e293b; margin-top: 15px;">AutoRepuestos JesCar</h1>
+        <p style="color: #475569;">Especialistas en baterías y repuestos multimarca.</p>
+        <img src="assets/img/Logo-jescar.jpg" alt="Logo JesCar" width="300" class="cabecera__logo">
     </header>
 
     <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="main-nav" style="background-color: #1e293b; padding: 12px; text-align: center; font-family: Arial, sans-serif;">
-    <ul style="list-style: none; margin: 0; padding: 0;">
-        <li style="display: inline; margin: 0 10px;">
-            <a href="index.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Inicio</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="catalogo-baterias.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Catálogo de Baterías</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="sobre-mi.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Sobre Mí</a>
-        </li>
-        <li style="display: inline; margin: 0 10px;">
-            <a href="contacto.html" style="color: #ffffff; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 4px; background-color: #334155;">Contacto</a>
-        </li>
-    </ul>
-</nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="menu__link--current">Inicio</a></li>
+            <li><a href="catalogo-baterias.html">Catálogo</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- CONTENIDO PRINCIPAL APILADO -->
     <main>
         <!-- Sección de bienvenida -->
-        <section style="padding: 20px; text-align: center;">
+        <section class="bienvenida">
             <h2>Tu vehículo en las mejores manos</h2>
-            <p>Encuentra la energía que tu carro necesita. <a href="#contacto">Ir a la información de contacto al final de la página</a>.</p>
-            <p>Trabajamos con las mejores marcas, garantizando <em>calidad</em>, excelente rendimiento y <mark>durabilidad superior</mark>.</p>
-        </section>
-
-        <!-- Tarjeta de Producto BEM (Paso 1 del Taller) -->
-        <section class="catalog-section" style="padding: 20px; display: flex; justify-content: center;">
-            <article class="card-product card-product--featured">
-                <img src="assets/img/producto-bateria.jpg" alt="Batería de carro AC Delco" class="card-product__img">
-                <h3 class="card-product__title">Batería AC Delco 12V - Ref. 42</h3>
-                <p class="card-product__text">Batería libre de mantenimiento de alto rendimiento para vehículos livianos y pesados.</p>
-                <a href="https://autorespuestosjescar.com/detalles" class="card-product__link">Ver especificaciones</a>
-                <a href="assets/img/catalogo.pdf" class="card-product__btn card-product__btn--sale">Descargar Ficha (.PDF)</a>
-            </article>
+            <p>Encuentra la energía que tu carro necesita con respaldo garantizado. <a href="#contacto">Ir a la ubicación al final de la página</a>.</p>
+            <p>Trabajamos con las mejores marcas, asegurando <em>calidad</em> y <mark>durabilidad superior</mark>.</p>
         </section>
 
         <!-- Sección de Video Promocional -->
-        <section style="padding: 20px; text-align: center;">
+        <section class="video-seccion">
             <h2>Conoce nuestros productos</h2>
             <div>
-                <video class="video-promocional" controls width="50%">
+                <video controls width="480">
                     <source src="assets/video/video-promocional.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de video.
                 </video>
             </div>
         </section>
 
-        <!-- Sección de Ubicación y Mapa -->
-        <section id="contacto" style="padding: 20px; text-align: center;">
+        <!-- Sección de Ubicación y Mapa (Integrada de vuelta en el Index) -->
+        <section id="contacto" class="bienvenida" style="text-align: center;">
             <h2>Ubicación de nuestra tienda</h2>
-            <p>Visítanos en nuestra sede física.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.01633519391!2d-73.05389!3d6.99406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTknMzguNiJOIDczwrAwMycxNC4wIlc!5e0!3m2!1ses!2sco!4v1234567890" width="400" height="300" style="border:0;" loading="lazy"></iframe>
+            <p style="color: #475569; margin-bottom: 15px;">Visítanos en nuestra sede física para recibir asesoría personalizada.</p>
+            <div style="margin-top: 15px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.01633519391!2d-73.05389!3d6.99406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTknMzguNiJOIDczwrAwMycxNC4wIlc!5e0!3m2!1ses!2sco!4v1234567890" width="100%" height="300" style="border:0; border-radius: 6px;" loading="lazy"></iframe>
+            </div>
         </section>
     </main>
-    
+
     <!-- PIE DE PÁGINA -->
     <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 20px;">
         <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>

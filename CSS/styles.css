@@ -1,241 +1,122 @@
-.card-product {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 350px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.card-product__title {
-    font-size: 1.25rem;
-    color: #1e293b;
-    margin-bottom: 10px;
-}
-
-.card-product__text {
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
-/* Enlaces externos (https) */
-a[href^="https://"] {
-    color: #2563eb;
-    font-weight: 500;
-}
-
-/* Enlaces a archivos específicos (.pdf) */
-a[href$=".pdf"] {
-    background-color: #fee2e2;
-    color: #991b1b;
-    padding: 6px 12px;
-    border-radius: 4px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-/* Combinador descendiente para los ítems del menú principal */
-.main-nav a {
-    color: #334155;
-    text-decoration: none;
-    padding: 8px 16px;
-}
-
-/* Modificador para el enlace de la página actual */
-.main-nav a.main-nav__link--current {
-    color: #ef4444;
-    font-weight: bold;
-    border-bottom: 2px solid #ef4444;
-}
-
-/* 1. Link & Visited */
-.card-product__link:link {
-    color: #2563eb;
-}
-
-.card-product__link:visited {
-    color: #4f46e5;
-}
-
-/* 2. Hover & Focus (Nunca quitar el outline de accesibilidad) */
-.card-product__link:hover {
-    text-decoration: underline;
-}
-
-.card-product__link:focus {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
-}
-
-/* 3. Active (Botón presionado) */
-.card-product__btn:active {
-    transform: scale(0.97);
-    background-color: #b91c1c;
-}
-
-/* Filas alternas para tablas (efecto cebra) */
-.specs-table tr:nth-child(even) {
-    background-color: #f8fafc;
-}
-
-/* Estilo para el primer y último elemento de una lista de especificaciones */
-.specs-list li:first-child {
-    font-weight: bold;
-    color: #0f172a;
-}
-
-.specs-list li:last-child {
-    border-bottom: none;
-    color: #64748b;
-}
-
-/* Selector lógico :is() para unificar estados interactivos */
-:is(.card-product__link, .card-product__btn):hover {
-    cursor: pointer;
-}
-
 /* ==========================================
-   1. RESET Y ESTILOS BASE
+   ESTRUCTURA BASE Y CONTENEDOR (960px)
    ========================================== */
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: system-ui, sans-serif;
-    color: #334155;
-    background-color: #f1f5f9;
+/* Contenedor principal centrado de 960px (Apilado sin Flexbox/Grid) */
+.contenedor-principal, 
+header, 
+nav, 
+main, 
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-/* ==========================================
-   2. COMPONENTE: TARJETA DE PRODUCTO (BEM)
-   ========================================== */
-.card-product {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 350px;
-}
-
-.card-product--featured {
-    border-color: #3b82f6;
-}
-
-.card-product__title {
-    font-size: 1.25rem;
-    color: #1e293b;
-    margin-bottom: 10px;
-}
-
-.card-product__text {
-    font-size: 0.95rem;
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
-.card-product__link {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.card-product__link:hover {
-    text-decoration: underline;
-}
-
-.card-product__link:focus {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
-}
-
-.card-product__btn--sale {
-    background-color: #dc2626;
-    color: #ffffff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.card-product__btn--sale:active {
-    transform: scale(0.98);
-}
-
-/* ==========================================
-   3. NAVEGACIÓN Y ENLACES POR ATRIBUTO
-   ========================================== */
-.main-nav a {
-    color: #334155;
-    text-decoration: none;
-}
-
-.main-nav a.main-nav__link--current {
-    font-weight: bold;
-    color: #ef4444;
-}
-                                                     
-a[href^="https://"] {
-    color: #2563eb;
-}
-
-a[href$=".pdf"] {
-    font-weight: 600;
-}
-
-/* ==========================================
-   4. TABLAS Y LISTAS
-   ========================================== */
-.specs-table tr:nth-child(even) {
+/* Estilos de cabecera BEM según el wireframe */
+.cabecera {
     background-color: #f8fafc;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #cbd5e1;
 }
 
-.specs-list li:first-child {
+.cabecera__logo {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #1e293b;
+    padding: 12px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #334155;
 }
 
-.specs-list li:last-child {
-    font-style: italic;
+.menu a.menu__link--current {
+    background-color: #2563eb;
 }
 
-/* ==========================================
-   ESTILOS PARA TABLAS (sobre-mi.html)
-   ========================================== */
-.about-table {
+/* Secciones de bienvenida */
+.bienvenida {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Videos responsivos */
+.video-seccion {
+    max-width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-seccion video {
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Tablas estructuradas (Página de estudiantes / sobre mí) */
+.tabla {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
     background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    overflow: hidden;
 }
 
-.about-table th, 
-.about-table td {
-    padding: 14px 18px;
+.tabla th, .tabla td {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
     text-align: left;
-    border-bottom: 1px solid #e2e8f0;
-    font-size: 0.95rem;
-    color: #334155;
 }
 
-.about-table th {
+.tabla thead {
     background-color: #1e293b;
     color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
 }
 
-/* Filas alternas (Efecto cebra - Requisito de taller) */
-.about-table tr:nth-child(even) {
+.tabla tr:nth-child(even) {
     background-color: #f8fafc;
 }
 
-.about-table tr:hover {
-    background-color: #f1f5f9;
+/* ==========================================
+   ESTILOS PARA IMÁGENES DE PRODUCTOS (Simetría)
+   ========================================== */
+.card-product__img {
+    width: 100%;
+    height: 220px;       /* 👈 Fija una altura exacta para todas las fotos */
+    object-fit: cover;   /* 👈 Recorta la imagen proporcionalmente para que llene el espacio sin deformarse */
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
