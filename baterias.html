@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Baterías - AutoRepuestos JesCar</title>
-    <!-- Enlace a la hoja de estilos compartida -->
+    <title>Baterías - AutoRepuestos JesCar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- CABECERA Y BANNER PRINCIPAL -->
-    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
-        <!-- Ruta del banner corregida a assets/img/ -->
+    <header class="cabecera">
         <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
-        
-        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
-        
-        <div style="text-align: center; font-family: Arial, sans-serif;">
-            <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Catálogo de Baterías</h1>
-            <p style="font-size: 1.1em; color: #475569;">Especialistas en <strong>baterías</strong> y repuestos para tu vehículo.</p>
-        </div>
-        
-        <!-- Ruta del logotipo corregida a assets/img/ -->
-        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="450" style="display: block; margin: 20px auto;">  
+        <h1 style="margin-top: 15px; color: #1e3a8a;">Resumen de Baterías</h1>
+        <p style="color: #475569; font-weight: 600;">Especialistas en <strong>baterías</strong> y repuestos para tu vehículo.</p>
+        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="280" class="cabecera__logo">  
     </header>
     
-    <!-- MENÚ DE NAVEGACIÓN (Con la clase actual adaptada) -->
- <!-- MENÚ DE NAVEGACIÓN ADAPTATIVO -->
-<nav class="menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo-baterias.html">Catálogo de Baterías</a></li>
-        <li><a href="sobre-mi.html">Sobre Mí</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo-baterias.html">Catálogo Completo</a></li>
+            <li><a href="baterias.html" class="menu__link--current">Baterías (Resumen)</a></li>
+            <li><a href="sobre-mi.html">Sobre Mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
     
-    <!-- CONTENIDO PRINCIPAL -->
-    <main style="padding: 20px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
-        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
-            <h2 style="color: #1e293b; margin-bottom: 15px;">Marcas Disponibles</h2>
-            <p style="color: #475569; line-height: 1.5; margin-bottom: 15px;">Ofrecemos una amplia gama de baterías para <strong>todo tipo de vehículos</strong>.</p>
+    <main>
+        <section class="bienvenida">
+            <h2>Nuestras 4 Marcas Aliadas</h2>
+            <p style="margin-bottom: 20px; color: #475569;">Trabajamos de la mano con los mejores fabricantes del mercado para garantizar energía óptima en <strong>todo tipo de vehículos</strong>:</p>
             
-            <!-- Lista desordenada con las marcas -->
-            <ul style="padding-left: 20px; color: #475569; line-height: 1.6;">
-                <li>Mac</li>
-                <li>Willard</li>
-                <li>Bosch</li>
-                <li>ACDelco</li>
+            <ul style="padding-left: 25px; color: #1e293b; line-height: 2.2; font-weight: 600; font-size: 1.05rem;">
+                <li>🔋 Mac — Resistencia y alta adaptabilidad al terreno.</li>
+                <li>⚡ Willard — Tecnología avanzada de aleación de plata y titanio.</li>
+                <li>⚙️ Bosch — Ingeniería alemana de máxima fiabilidad.</li>
+                <li>🚗 ACDelco — Rendimiento superior libre de mantenimiento.</li>
             </ul>
         </section>
 
-        <section style="background-color: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center;">
-            <h2 style="color: #1e293b; margin-bottom: 15px;">Batería Destacada</h2>
-            <!-- Ruta de la imagen corregida a assets/img/ -->
-            <img src="assets/img/bateria-destacada.jpg" alt="Batería Willard de 12V para automóvil" width="450" style="display: block; margin: 0 auto 15px auto; max-width: 100%; height: auto; border-radius: 6px;">
-            <p style="color: #475569;">Conoce más sobre el fabricante en su <a href="https://www.bateriaswillard.com" target="_blank" style="color: #2563eb; text-decoration: none;">sitio web oficial</a> (se abre en nueva pestaña).</p>
+        <section class="bienvenida" style="text-align: center;">
+            <h2>Batería Destacada del Mes</h2>
+            <img src="assets/img/bateria-destacada.jpg" alt="Batería Willard de 12V para automóvil" style="max-width: 400px; width: 100%; height: auto; margin: 20px auto; display: block; border-radius: 8px;">
+            <p style="color: #475569;">Conoce más sobre especificaciones técnicas en su <a href="https://www.bateriaswillard.com" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 600;">sitio web oficial</a>.</p>
         </section>
     </main>
     
-    <!-- PIE DE PÁGINA -->
-    <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
+    <footer style="text-align: center; padding: 25px; background-color: #ffffff; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0;">
         <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>
     </footer>
 

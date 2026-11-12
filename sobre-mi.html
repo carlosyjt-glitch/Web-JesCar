@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí - AutoRepuestos JESCAR</title>
-    <!-- Enlace a la hoja de estilos compartida -->
+    <title>Sobre Mí - AutoRepuestos JesCar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- CABECERA Y BANNER PRINCIPAL -->
-    <header style="text-align: center; font-family: Arial, sans-serif; background-color: #f8fafc; padding-bottom: 10px;">
-        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal de AutoRepuestos JesCar" width="100%" style="display: block;">
-        
-        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
-        
-        <h1 style="color: #1e293b; font-size: 2.2em; margin-bottom: 10px;">Sobre Mí y la Empresa</h1>
-        <p style="font-size: 1.1em; color: #475569;">Conoce la trayectoria y detalles de <strong>AutoRepuestos JesCar</strong>.</p>
-        
-        <img src="assets/img/Logo-jescar.jpg" alt="logo JESCar" width="300" style="display: block; margin: 20px auto;">
-        
-        <hr style="width: 80%; margin: 20px auto; border: 0; border-top: 1px solid #cbd5e1;">
+    <header class="cabecera">
+        <img src="assets/img/banner-repuestos.jpg" alt="Banner principal" width="100%" style="display: block;">
+        <h1 style="margin-top: 15px; color: #1e3a8a;">Perfil y Empresa</h1>
+        <p style="color: #475569; font-weight: 600;">Conoce la trayectoria y solidez de AutoRepuestos JesCar.</p>
+        <img src="assets/img/Logo-jescar.jpg" alt="Logo JesCar" width="280" class="cabecera__logo">
     </header>
-    
-    <!-- MENÚ DE NAVEGACIÓN ADAPTATIVO -->
-<nav class="menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo-baterias.html">Catálogo de Baterías</a></li>
-        <li><a href="sobre-mi.html">Sobre Mí</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
-    
-    <!-- CONTENIDO PRINCIPAL CON LA TABLA MEJORADA -->
-    <main style="padding: 30px 20px; max-width: 960px; margin: 0 auto; font-family: Arial, sans-serif;">
-        <section class="bienvenida" style="background-color: #ffffff; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <h2 style="color: #1e293b; margin-bottom: 10px; font-size: 1.8rem;">Perfil y Resumen Corporativo</h2>
-            <p style="color: #475569; line-height: 1.6; margin-bottom: 20px;">
-                A continuación, presentamos los datos institucionales, personales y operativos que respaldan nuestra experiencia en el sector automotriz.
-            </p>
 
-            <!-- TABLA ESTILIZADA -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo-baterias.html">Catálogo Completo</a></li>
+            <li><a href="baterias.html">Baterías (Resumen)</a></li>
+            <li><a href="sobre-mi.html" class="menu__link--current">Sobre Mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="bienvenida">
+            <h2>Información Institucional</h2>
+            <p style="margin-bottom: 20px;">Detalles corporativos y datos clave de nuestra organización multimarca:</p>
+
             <table class="about-table">
                 <thead>
                     <tr>
                         <th style="width: 30%;">Categoría</th>
-                        <th style="width: 70%;">Detalle / Información Institucional</th>
+                        <th style="width: 70%;">Detalle / Información</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>👤 Datos Personales</strong></td>
-                        <td><strong>Carlos Yovanny Jaimes</strong><br><span style="color: #64748b; font-size: 0.9rem;">Coordinador de Flotas, Licitaciones y Proyectos de Ingeniería Web.</span></td>
+                        <td><strong>👤 Dirección General</strong></td>
+                        <td><strong>Carlos Yovanny Jaimes</strong><br><span style="color: #64748b; font-size: 0.9rem;">Coordinador de Flotas, Licitaciones y Proyectos.</span></td>
                     </tr>
                     <tr>
-                        <td><strong>⏰ Horario de Atención</strong></td>
-                        <td>
-                            • Lunes a Viernes: 8:00 a.m. – 6:00 p.m.<br>
-                            • Sábados: 8:00 a.m. – 2:00 p.m. (Jornada continua)
-                        </td>
+                        <td><strong>⏰ Horarios</strong></td>
+                        <td>Lunes a Viernes: 8:00 a.m. – 6:00 p.m. <br> Sábados: 8:00 a.m. – 2:00 p.m.</td>
                     </tr>
                     <tr>
-                        <td><strong>🏢 Biografía de la Empresa</strong></td>
-                        <td>
-                            <strong>AutoRepuestos JesCar</strong> es una empresa distribuidora líder en el sector automotriz, especializada en proveer repuestos, accesorios de alta gama y baterías multimarca para vehículos livianos y pesados. Nos destacamos por garantizar un servicio transparente, asesoría técnica especializada y un inventario de máxima durabilidad para todo el parque automotor.
-                        </td>
+                        <td><strong>🏢 Biografía</strong></td>
+                        <td>AutoRepuestos JesCar es una empresa distribuidora líder, especializada en proveer repuestos y baterías multimarca de máxima durabilidad para vehículos livianos y pesados.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    
-    <!-- PIE DE PÁGINA -->
-    <footer style="text-align: center; padding: 20px; background-color: #1e293b; color: #ffffff; margin-top: 40px; font-family: Arial, sans-serif;">
+
+    <footer style="text-align: center; padding: 25px; background-color: #ffffff; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0;">
         <p>Derechos reservados &copy; 2026 - AutoRepuestos JesCar</p>
     </footer>
 
